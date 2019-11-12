@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+
+
+        <link rel="stylesheet" href="/css/main.css" type="text/css" >
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    </head>
+    <body>  
+        <div class="contenedor">
+
+            <div class="dashboard-title">
+                    <span><i class="fa fa-thermometer-three-quarters"></i></span>
+                     <h1>Prevision del tiempo</h1>
+                <span><i class="fa fa-thermometer-three-quarters"></i></span>
+            </div><!--fin del contenedor-->
+
+            <div class='dropdown-container'>
+                <!-- "London" "New York" "Germany"  "Russia" "Australia" "Chile" -->
+                <select  id="select" >
+                  <option value="0" >Londres</option>
+                  <option value="1"  >Current Location</option>
+                  <option value="2">Germany</option>
+                  <option value="3" >New York </option>
+                  <option value="4">Russia </option>
+                  <option value="5">Autralia</option>
+                  <option value="6">Chile</option>
+                  
+                  
+                </select>
+
+                    <!-- button to show the function -->
+                <button type="button" onclick="GetCountryByName()"><i class="fa fa-search"></i></button>
+              </div>
+              
+
+           <div class="card-container">
+                    
+           </div><!--fin del contenedor de la cartas-->
+            
+        </div><!--final de contenedor-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/service.js"></script>
+        <script src="/js/moment.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
